@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IPM Study Hub — Estudio Interactivo</title>
+  <meta name="description" content="Plataforma de estudio interactiva para la Ley del IPM, Matriz de Riesgos y Manual de Procedimientos del área." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated background -->
+  <div class="bg-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="logo">
+        <div class="logo-icon">⚖️</div>
+        <div class="logo-text">
+          <span class="logo-title">IPM Study Hub</span>
+          <span class="logo-sub">Estudio Interactivo</span>
+        </div>
+      </div>
+      <div class="search-wrap">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="globalSearch" placeholder="Buscar en todos los módulos..." autocomplete="off" />
+        <kbd>Ctrl+K</kbd>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search Results Overlay -->
+  <div id="searchOverlay" class="search-overlay hidden">
+    <div class="search-results" id="searchResults"></div>
+  </div>
+
+  <!-- Module Tabs -->
+  <nav class="module-nav">
+    <button class="mod-tab active" data-module="ipm">
+      <span class="tab-icon">⚖️</span>
+      <span class="tab-label">Ley del IPM</span>
+    </button>
+    <button class="mod-tab" data-module="riesgos">
+      <span class="tab-icon">⚠️</span>
+      <span class="tab-label">Matriz de Riesgos</span>
+      <span class="tab-badge coming">Próximamente</span>
+    </button>
+    <button class="mod-tab" data-module="manual">
+      <span class="tab-icon">📋</span>
+      <span class="tab-label">Manual de Proc.</span>
+      <span class="tab-badge coming">Próximamente</span>
+    </button>
+  </nav>
+
+  <!-- Main content -->
+  <main class="main-content">
+
+    <!-- IPM Module -->
+    <section id="module-ipm" class="module active">
+
+      <!-- Module hero -->
+      <div class="module-hero">
+        <div class="hero-content">
+          <h1>Instituto de Previsión Militar</h1>
+          <p>Decreto No. 167-2006 — Régimen de Riesgos Especiales</p>
+          <div class="hero-stats">
+            <div class="stat"><span class="stat-num">3</span><span class="stat-lbl">Estructuras</span></div>
+            <div class="stat"><span class="stat-num">8</span><span class="stat-lbl">Beneficios</span></div>
+            <div class="stat"><span class="stat-num">6</span><span class="stat-lbl">Instituciones</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">🛡️</div>
+      </div>
+
+      <!-- IPM Sub-navigation -->
+      <nav class="sub-nav" id="ipmSubNav">
+        <button class="sub-tab active" data-sub="fundamentos">🏛️ Fundamentos</button>
+        <button class="sub-tab" data-sub="nuevos">✨ Nuevos Afiliados</button>
+        <button class="sub-tab" data-sub="preexistentes">🗂️ Pre-existentes</button>
+        <button class="sub-tab" data-sub="injupemp">⚖️ INJUPEMP</button>
+        <button class="sub-tab" data-sub="funerarios">📊 Gastos Funerarios</button>
+        <button class="sub-tab" data-sub="calculadora">🧮 Calculadora</button>
+      </nav>
+
+      <!-- SUB-SECTION: Fundamentos -->
+      <div id="sub-fundamentos" class="sub-section active">
+        <div class="study-layout">
+          <aside class="study-toc">
+            <div class="toc-title">En esta sección</div>
+            <a href="#fund-que-es" class="toc-link">¿Qué es el IPM?</a>
+            <a href="#fund-rre" class="toc-link">El RRE</a>
+            <a href="#fund-mision" class="toc-link">Misión y Visión</a>
+            <a href="#fund-inscripcion" class="toc-link">Inscripción</a>
+            <a href="#fund-formularios" class="toc-link">Formularios</a>
+          </aside>
+          <div class="study-content">
+
+            <div class="content-section" id="fund-que-es">
+              <h2>🏛️ ¿Qué es el IPM?</h2>
+              <p>El <strong>Instituto de Previsión Militar (IPM)</strong> es un organismo con personalidad jurídica y patrimonio propio. Funciona con independencia técnica, administrativa y financiera.</p>
+              <div class="info-card violet">
+                <div class="info-card-icon">⚖️</div>
+                <div>
+                  <strong>Base legal:</strong> Es el órgano de aplicación de la Ley del Régimen de Riesgos Especiales, <em>Decreto No. 167-2006</em> del Congreso Nacional de Honduras.
+                </div>
+              </div>
+              <div class="objectives-grid">
+                <div class="obj-item">
+                  <div class="obj-num">01</div>
+                  <p>Capacitar sobre los procedimientos de inscripción y actualización de expedientes.</p>
+                </div>
+                <div class="obj-item">
+                  <div class="obj-num">02</div>
+                  <p>Dar a conocer los beneficios del RRE contemplados en la Ley del IPM.</p>
+                </div>
+                <div class="obj-item">
+                  <div class="obj-num">03</div>
+                  <p>Elaborar cálculos básicos sobre los beneficios a los que tiene derecho el afiliado.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-section" id="fund-rre">
+              <h2>⚙️ El Régimen de Riesgos Especiales (RRE)</h2>
+              <p>Sistema de previsión social <strong>exclusivo y obligatorio</strong> para los miembros de las siguientes instituciones:</p>
+              <div class="institutions-grid">
+                <div class="inst-card"><span class="inst-letter">A</span><span>Fuerzas Armadas de Honduras</span></div>
+                <div class="inst-card"><span class="inst-letter">B</span><span>Policía Nacional</span></div>
+                <div class="inst-card"><span class="inst-letter">C</span><span>Cuerpo de Bomberos</span></div>
+                <div class="inst-card"><span class="inst-letter">D</span><span>DNII</span></div>
+                <div class="inst-card"><span class="inst-letter">E</span><span>Penitenciaría Nacional</span></div>
+                <div class="inst-card"><span class="inst-letter">F</span><span>Personal del IPM y sus Dependencias</span></div>
+              </div>
+            </div>
+
+            <div class="content-section" id="fund-mision">
+              <h2>🎯 Misión y Visión</h2>
+              <div class="two-cols">
+                <div class="info-card cyan">
+                  <div class="info-card-label">MISIÓN</div>
+                  <p>Garantizar a nuestros afiliados un <strong>servicio de calidad</strong> en el otorgamiento oportuno de sus beneficios en Seguridad Social.</p>
+                </div>
+                <div class="info-card violet">
+                  <div class="info-card-label">VISIÓN</div>
+                  <p>Ser una Institución <strong>líder en Seguridad Social</strong>, garantizando de manera sostenible los beneficios a sus afiliados, con administración transparente, solidez financiera y talento humano comprometido.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-section" id="fund-inscripcion">
+              <h2>📂 Inscripción y Expedientes</h2>
+              <div class="info-card amber">
+                <div class="info-card-icon">⚠️</div>
+                <div>Para gozar de todos los beneficios y servicios del RRE se debe contar con el <strong>expediente completo</strong>. Toda documentación debe presentarse en <strong>ORIGINAL</strong>.</div>
+              </div>
+              <h3>Documentos requeridos (originales):</h3>
+              <div class="checklist">
+                <div class="check-item">📄 Partida de Nacimiento del <strong>Afiliado</strong></div>
+                <div class="check-item">📄 Partida de Nacimiento de los <strong>Padres</strong></div>
+                <div class="check-item">📄 Partida de Nacimiento de los <strong>Hijos</strong></div>
+                <div class="check-item">📄 Partida de Nacimiento del <strong>Cónyuge</strong></div>
+                <div class="check-item">💍 Acta de Matrimonio (Registro Civil)</div>
+                <div class="check-item">📸 Una fotografía tamaño carnet</div>
+              </div>
+              <div class="info-card amber" style="margin-top:16px">
+                <strong>Si se divorcia:</strong> Copia de sentencia de divorcio + Certificación del registro civil.<br>
+                <strong>Oficiales/Sub-oficiales ascendidos:</strong> También presentar copia del Acuerdo de Ascenso.
+              </div>
+              <div class="info-card emerald" style="margin-top:16px">
+                <div class="info-card-icon">🔄</div>
+                <div><strong>Actualización:</strong> Máximo cada 2 años. Al cambiar de grado, domicilio, teléfono o al tener nuevos hijos.<br>📧 <strong>mdiaz@grupoipm.hn</strong></div>
+              </div>
+            </div>
+
+            <div class="content-section" id="fund-formularios">
+              <h2>📝 Formularios del Expediente</h2>
+              <div class="accordion" id="accordionFund">
+                <div class="acc-item">
+                  <button class="acc-header" onclick="toggleAcc(this)"><span>1. Hoja de Datos Generales</span><span class="acc-arrow">▼</span></button>
+                  <div class="acc-body">
+                    <p>Nombre completo, lugar y fecha de nacimiento, dirección, grado, arma, serie N°, identidad N°, unidad/dependencia actual, fecha de ingreso, fecha de inicio a cotizar, teléfonos, correo, estado civil, profesión; estado de grado conforme ascensos (exclusivo oficiales); información de familiares (esposa/o, padres: nombre, dirección, fechas); tabla de hijos (nombre, lugar y fecha de nacimiento, edad).</p>
+                  </div>
+                </div>
+                <div class="acc-item">
+                  <button class="acc-header" onclick="toggleAcc(this)"><span>2. Póliza RRE — Auxilio de Sobrevivencia (Art. 37)</span><span class="acc-arrow">▼</span></button>
+                  <div class="acc-body">
+                    <p>El afiliado designa libre y espontáneamente a sus beneficiarios para cuando ocurra su fallecimiento siendo: afiliado activo, en situación suspensiva (+25 años), retirado o discapacitado. El afiliado puede cambiar sus beneficiarios cuando desee (Art. 39).</p>
+                  </div>
+                </div>
+                <div class="acc-item">
+                  <button class="acc-header" onclick="toggleAcc(this)"><span>3. Póliza Pre-existentes — Suma Asegurada (Art. 60)</span><span class="acc-arrow">▼</span></button>
+                  <div class="acc-body">
+                    <p>Para afiliados pre-existentes. Designa beneficiarios para el pago de la Suma Asegurada cuando fallezca el afiliado activo (20× sueldo asegurado) o cuando se retire con ≥22 años de cotización.</p>
+                  </div>
+                </div>
+                <div class="acc-item">
+                  <button class="acc-header" onclick="toggleAcc(this)"><span>4. Certificado de Historial Médico</span><span class="acc-arrow">▼</span></button>
+                  <div class="acc-body">
+                    <p>Datos del afiliado, cobertura médica (IHSS, HM, HPN, HBCB, otros), antecedentes de salud, hábitos, incapacidades, medicamentos y autorización para revelación de datos. <strong>Validez: 2 años.</strong></p>
+                  </div>
+                </div>
+                <div class="acc-item">
+                  <button class="acc-header" onclick="toggleAcc(this)"><span>5. Formulario "Conozca su Cliente" (CNBS)</span><span class="acc-arrow">▼</span></button>
+                  <div class="acc-body">
+                    <p>Exigido por la Comisión Nacional de Bancos y Seguros. Datos generales, dirección, referencias bancarias y personales, distribución de ingresos, y declaración sobre cargos públicos o relación con Personas Políticamente Expuestas (PEP).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- SUB-SECTION: Nuevos Afiliados -->
+      <div id="sub-nuevos" class="sub-section">
+        <div class="study-layout">
+          <aside class="study-toc">
+            <div class="toc-title">Nuevos Afiliados</div>
+            <a href="#n-quien" class="toc-link">¿Quién es nuevo afiliado?</a>
+            <a href="#n-retiro" class="toc-link">A. Pensión por Retiro</a>
+            <a href="#n-disc" class="toc-link">B. Discapacidad</a>
+            <a href="#n-sep" class="toc-link">C. Separación</a>
+            <a href="#n-sobrev" class="toc-link">D. Sobrevivencia</a>
+            <a href="#n-desig" class="toc-link">E. Designación</a>
+            <a href="#n-fun" class="toc-link">F. Gastos Funerarios</a>
+            <a href="#n-cirl" class="toc-link">G. Reserva Laboral</a>
+            <a href="#n-reglas" class="toc-link">H. Reglas Generales</a>
+            <a href="#n-resumen" class="toc-link">✅ Resumen</a>
+          </aside>
+          <div class="study-content">
+
+            <div class="hero-badge">
+              <span class="badge-icon">✨</span>
+              <div>
+                <strong>Estructura 1 de 3 — Nuevos Afiliados</strong>
+                <p>Capítulo IV, Arts. 30–45 del Decreto 167-2006. Aplica a quienes ingresan al RRE a partir del <strong>21 de febrero de 2007</strong>.</p>
+              </div>
+            </div>
+
+            <div class="content-section" id="n-quien">
+              <h2>👥 ¿Quién es "Nuevo Afiliado"?</h2>
+              <div class="two-cols">
+                <div class="info-card violet">
+                  <div class="info-card-label">PRE-EXISTENTES</div>
+                  <p>Quienes ya estaban protegidos por el IPM bajo el Decreto No. 905-80 al momento de entrada en vigencia del Decreto 167-2006 (Art. 53). Se rigen por el Capítulo VI (Arts. 54–66).</p>
+                </div>
+                <div class="info-card cyan">
+                  <div class="info-card-label">NUEVOS AFILIADOS ★</div>
+                  <p>Quienes ingresan al RRE <strong>a partir</strong> de la entrada en vigencia del Decreto 167-2006. Se rigen por el Capítulo IV (Arts. 30–45). Fecha de corte: <strong>21 de febrero de 2007</strong>.</p>
+                </div>
+              </div>
+
+              <h3>¿Quién debe afiliarse? (Art. 3)</h3>
+              <div class="institutions-grid">
+                <div class="inst-card"><span class="inst-letter">A</span><span>Fuerzas Armadas de Honduras</span></div>
+                <div class="inst-card"><span class="inst-letter">B</span><span>Policía Nacional y Asuntos Internos</span></div>
+                <div class="inst-card"><span class="inst-letter">C</span><span>Cuerpo de Bomberos</span></div>
+                <div class="inst-card"><span class="inst-letter">D</span><span>Otras instituciones de alto riesgo calificadas por el IPM (con dictamen CNBS)</span></div>
+              </div>
+
+              <div class="info-card rose" style="margin-top:16px">
+                <div class="info-card-icon">🚫</div>
+                <div>
+                  <strong>Excluidos (Art. 4):</strong>
+                  <ul style="margin-top:6px">
+                    <li>Servidores eventuales, voluntarios y personal no asalariado</li>
+                    <li>Quienes ya estén pensionados por otro régimen previsional al entrar la Ley</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="info-card amber" style="margin-top:12px">
+                <div class="info-card-icon">💡</div>
+                <div><strong>Personal Auxiliar vs. Riesgo Especial:</strong> "Riesgo especial" = personal operativo (combate, seguridad, emergencias). "Auxiliar" = personal administrativo/apoyo. Si tienes dudas, confirma con RRHH o el Departamento de Afiliación del IPM.</div>
+              </div>
+            </div>
+
+            <div class="content-section" id="n-retiro">
+              <h2>A. Pensión por Retiro (Art. 33)</h2>
+              <div class="benefit-header">
+                <div class="benefit-type">RENTA VITALICIA ORDINARIA</div>
+                <p>Pago mensual <strong>de por vida</strong>, incluyendo décimo tercer y décimo cuarto mes.</p>
+              </div>
+
+              <h3>Requisitos mínimos:</h3>
+              <div class="req-table">
+                <div class="req-row header">
+                  <span>Categoría</span><span>Edad mínima</span><span>Años de aportación</span>
+                </div>
+                <div class="req-row">
+                  <span><strong>Personal Auxiliar</strong></span><span class="req-value">58 años</span><span class="req-value">25 años</span>
+                </div>
+                <div class="req-row">
+                  <span><strong>Servidores con Riesgo Especial</strong></span><span class="req-value">50 años</span><span class="req-value">25 años</span>
+                </div>
+              </div>
+
+              <h3>¿Cómo se calcula el SBM?</h3>
+              <div class="info-card cyan">
+                <div class="info-card-icon">📐</div>
+                <div><strong>Salario Básico Mensual (SBM):</strong> Promedio mensual de los salarios reales de los <strong>últimos 5 años</strong> de aportación.<br>
+                <em>Límites:</em> No menor al 70% del salario mínimo ni mayor a 20 salarios mínimos (o al último salario devengado, lo que sea menor).</div>
+              </div>
+
+              <h3>Fórmulas de cálculo:</h3>
+              <div class="two-cols">
+                <div class="formula-card">
+                  <div class="formula-label">Personal Auxiliar</div>
+                  <div class="formula">SBM × %tabla(edad, años)</div>
+                  <p>Porcentaje según tabla oficial Edad × Años cotizados.</p>
+                </div>
+                <div class="formula-card cyan">
+                  <div class="formula-label">Riesgo Especial</div>
+                  <div class="formula">65% + (3% × años extra)</div>
+                  <p>65% base por los primeros 25 años, +3% por cada año adicional. Tope: 95% del SBM.</p>
+                </div>
+              </div>
+
+              <h3>📊 Tabla oficial — Porcentaje sobre el SBM (Personal Auxiliar, Art. 33):</h3>
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr><th>Edad \ Años</th><th>25</th><th>26</th><th>27</th><th>28</th><th>29</th><th>30</th><th>31</th><th>32</th><th>33</th><th>34</th><th>35+</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><strong>58</strong></td><td>65%</td><td>68%</td><td>71%</td><td>74%</td><td>77%</td><td>80%</td><td>83%</td><td>86%</td><td>89%</td><td>92%</td><td>95%</td></tr>
+                    <tr><td><strong>59</strong></td><td>68%</td><td>71%</td><td>74%</td><td>77%</td><td>80%</td><td>83%</td><td>86%</td><td>89%</td><td>92%</td><td>95%</td><td>95%</td></tr>
+                    <tr><td><strong>60</strong></td><td>71%</td><td>74%</td><td>77%</td><td>80%</td><td>83%</td><td>86%</td><td>89%</td><td>92%</td><td>95%</td><td>95%</td><td>95%</td></tr>
+                    <tr><td><strong>61</strong></td><td>74%</td><td>77%</td><td>80%</td><td>83%</td><td>86%</td><td>89%</td><td>92%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td></tr>
+                    <tr><td><strong>62</strong></td><td>77%</td><td>80%</td><td>83%</td><td>86%</td><td>89%</td><td>92%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td></tr>
+                    <tr><td><strong>63</strong></td><td>80%</td><td>83%</td><td>86%</td><td>89%</td><td>92%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td></tr>
+                    <tr><td><strong>64</strong></td><td>83%</td><td>86%</td><td>89%</td><td>92%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td></tr>
+                    <tr><td><strong>65</strong></td><td>86%</td><td>89%</td><td>92%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td></tr>
+                    <tr><td><strong>66</strong></td><td>89%</td><td>92%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td></tr>
+                    <tr><td><strong>67</strong></td><td>92%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td></tr>
+                    <tr><td><strong>68+</strong></td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td><td>95%</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p style="font-size:12px;color:var(--c-text-dim);margin-top:6px">A partir de 36 años cotizados, el porcentaje se mantiene en 95% (tope legal). Tabla extendida hasta 40 años de cotización.</p>
+
+              <div class="example-block">
+                <div class="ex-title">📐 Ejemplo Oficial</div>
+                <div class="ex-row"><span class="ex-label">SBM (últimos 5 años ÷ 60)</span><span class="ex-value">L. 10,500.00</span></div>
+                <div class="ex-row"><span class="ex-label">Años cotizados</span><span class="ex-value">25 años</span></div>
+                <div class="ex-row"><span class="ex-label">Edad</span><span class="ex-value">58 años</span></div>
+                <div class="ex-row"><span class="ex-label">Porcentaje (tabla)</span><span class="ex-value">65%</span></div>
+                <div class="ex-total">Pensión mensual: L. 6,825.00 (× 14 pagos/año) + CIRL</div>
+              </div>
+
+              <h3>Situaciones especiales:</h3>
+              <div class="accordion">
+                <div class="acc-item">
+                  <button class="acc-header" onclick="toggleAcc(this)"><span>⏸ Situación Suspensiva</span><span class="acc-arrow">▼</span></button>
+                  <div class="acc-body"><p>Si el afiliado (típicamente Personal Auxiliar) cumple los 25 años de cotizar pero no la edad mínima, pasa a situación suspensiva. El derecho ya está adquirido, pero la pensión se hace efectiva una vez cumplida la edad, ajustada por el índice que apruebe el IPM.</p></div>
+                </div>
+                <div class="acc-item">
+                  <button class="acc-header" onclick="toggleAcc(this)"><span>⚡ Retiro Anticipado</span><span class="acc-arrow">▼</span></button>
+                  <div class="acc-body"><p>Cualquier afiliado con al menos 25 años de cotización puede retirarse antes de cumplir la edad normal, usando los recursos acumulados en su CIRL y en su Cuenta de Cotizaciones Individuales Voluntarias (sujeto al reglamento especial del IPM).</p></div>
+                </div>
+                <div class="acc-item">
+                  <button class="acc-header" onclick="toggleAcc(this)"><span>🔀 Modalidades Alternativas de Pago</span><span class="acc-arrow">▼</span></button>
+                  <div class="acc-body">
+                    <ul>
+                      <li><strong>Renta Vitalicia Mancomunada:</strong> el RRE paga al pensionado y a un beneficiario designado el 100% mientras ambos vivan; al morir uno, se reduce al 50%.</li>
+                      <li><strong>Renta Vitalicia con Período Garantizado:</strong> renta mensual durante 1 a 20 años garantizados; si el retirado sobrevive ese período, se le sigue pagando hasta su fallecimiento.</li>
+                      <li><strong>Pago Único:</strong> solo disponible en el primer año y con aprobación de la Junta Directiva del IPM por lesión o enfermedad grave y terminal.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-section" id="n-disc">
+              <h2>B. Pensión y Auxilio por Discapacidad (Arts. 34–35)</h2>
+              <div class="info-card violet">
+                <div class="info-card-icon">📋</div>
+                <div><strong>Definición (Art. 34):</strong> Incapacidad permanente de un afiliado, por lesión o enfermedad física o mental, que le impide seguir desempeñando sus funciones habituales. La declara el <strong>Comité Especial del IPM</strong>; la Junta Directiva resuelve la aplicación de la pensión.</div>
+              </div>
+
+              <div class="info-card emerald" style="margin-top:12px">
+                <div class="info-card-icon">👥</div>
+                <div><strong>¿Quién puede solicitarla?</strong> Los cotizantes activos <strong>sin importar su antigüedad</strong>, y los afiliados en situación suspensiva con más de 25 años de aportación.</div>
+              </div>
+
+              <h3>A) Pensión por Discapacidad — renta vitalicia mensual:</h3>
+              <div class="benefit-cards-grid">
+                <div class="benefit-tile violet">
+                  <div class="bt-label">Alto Riesgo del Servicio</div>
+                  <div class="bt-value">90%</div>
+                  <div class="bt-unit">del SBM mensual</div>
+                </div>
+                <div class="benefit-tile cyan">
+                  <div class="bt-label">Cualquier otra causa</div>
+                  <div class="bt-value">80%</div>
+                  <div class="bt-unit">del SBM mensual</div>
+                </div>
+              </div>
+
+              <h3>Al fallecer el afiliado discapacitado:</h3>
+              <div class="dist-chart">
+                <div class="dist-row">
+                  <div class="dist-label">Cónyuge / compañero(a)</div>
+                  <div class="dist-bar-wrap"><div class="dist-bar" style="width:50%">50%</div></div>
+                </div>
+                <div class="dist-row">
+                  <div class="dist-label">1 hijo</div>
+                  <div class="dist-bar-wrap"><div class="dist-bar cyan" style="width:20%">20%</div></div>
+                </div>
+                <div class="dist-row">
+                  <div class="dist-label">+2 hijos (proporcional)</div>
+                  <div class="dist-bar-wrap"><div class="dist-bar cyan" style="width:40%">40%</div></div>
+                </div>
+              </div>
+              <div class="info-card amber" style="margin-top:12px">
+                <strong>Tope legal:</strong> La suma de pensiones no puede ser menor al 70% del salario mínimo ni mayor al 90% de la pensión que percibía el causante.<br>
+                <strong>Aplica a:</strong> hijos menores de 18 años, estudiantes menores de 24 años, o hijos discapacitados sin límite de edad.
+              </div>
+
+              <h3>B) Auxilio por Discapacidad — pago único adicional (Art. 35):</h3>
+              <div class="info-card rose">
+                <strong>Solo aplica</strong> a cotizantes activos o en situación suspensiva con <strong>más de 25 años de aportación</strong> al momento de la declaratoria.
+              </div>
+              <div class="benefit-cards-grid" style="margin-top:12px">
+                <div class="benefit-tile violet">
+                  <div class="bt-label">Alto Riesgo del Servicio</div>
+                  <div class="bt-value">40×</div>
+                  <div class="bt-unit">la renta vitalicia mensual</div>
+                </div>
+                <div class="benefit-tile cyan">
+                  <div class="bt-label">Cualquier otra causa</div>
+                  <div class="bt-value">20×</div>
+                  <div class="bt-unit">la renta vitalicia mensual</div>
+                </div>
+              </div>
+              <div class="info-card amber" style="margin-top:12px">
+                <div class="info-card-icon">⚠️</div>
+                <div>Un discapacitado permanente declarado por el Comité <strong>no puede cambiar</strong> su renta vitalicia ordinaria por otra modalidad de pensión.</div>
+              </div>
+
+              <div class="two-cols" style="margin-top:16px">
+                <div class="example-block">
+                  <div class="ex-title">📐 Alto Riesgo (SBM L. 9,000)</div>
+                  <div class="ex-row"><span class="ex-label">Pensión</span><span class="ex-value">9,000 × 90% = L. 8,100</span></div>
+                  <div class="ex-row"><span class="ex-label">× 14 pagos/año</span><span class="ex-value">L. 113,400/año</span></div>
+                  <div class="ex-total">Auxilio único: 8,100 × 40 = L. 324,000</div>
+                </div>
+                <div class="example-block">
+                  <div class="ex-title">📐 Otras Causas (SBM L. 9,000)</div>
+                  <div class="ex-row"><span class="ex-label">Pensión</span><span class="ex-value">9,000 × 80% = L. 7,200</span></div>
+                  <div class="ex-row"><span class="ex-label">× 14 pagos/año</span><span class="ex-value">L. 100,800/año</span></div>
+                  <div class="ex-total">Auxilio único: 7,200 × 20 = L. 144,000</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-section" id="n-sep">
+              <h2>C. Separación o Transferencia de Valores Actuariales (Art. 36)</h2>
+              <div class="benefit-header">
+                <div class="benefit-type">APLICA CON MENOS DE 25 AÑOS COTIZADOS</div>
+                <p>El afiliado se separa del RRE sin haber adquirido derecho a pensión por retiro o discapacidad.</p>
+              </div>
+
+              <div class="two-cols" style="margin-top:16px">
+                <div class="info-card violet">
+                  <div class="info-card-label">A) BENEFICIO DE SEPARACIÓN</div>
+                  <p>Pago único. Monto = el valor máximo entre:</p>
+                  <ul style="margin-top:8px">
+                    <li>El 3% del valor acumulado en la cuenta de prima de antigüedad, por cada año cotizado; <strong>o</strong></li>
+                    <li>El valor acumulado en las aportaciones individuales del afiliado + sus intereses.</li>
+                  </ul>
+                </div>
+                <div class="info-card cyan">
+                  <div class="info-card-label">B) TRANSFERENCIA DE VALORES</div>
+                  <p>El afiliado puede optar por que se le reconozcan los años cotizados en el RRE dentro del nuevo régimen de previsión social al que se transfiera. El IPM traslada el pago correspondiente.</p>
+                </div>
+              </div>
+
+              <h3>Documentos para solicitar la devolución:</h3>
+              <div class="checklist">
+                <div class="check-item">📄 Constancia de Baja original / Acuerdo de Cancelación</div>
+                <div class="check-item">🪪 2 copias de Identidad</div>
+                <div class="check-item">🏦 Copia de la libreta de banco</div>
+              </div>
+
+              <div class="info-card emerald" style="margin-top:12px">
+                <div class="info-card-icon">⏸</div>
+                <div><strong>Mientras decide:</strong> Si el afiliado deja de prestar servicio pero no ejerce ninguna opción, puede permanecer en <strong>situación suspensiva</strong> dentro del Régimen hasta completar los requisitos mínimos para pensionarse.</div>
+              </div>
+            </div>
+
+            <div class="content-section" id="n-sobrev">
+              <h2>D. Auxilio y Pensión de Sobrevivencia (Arts. 37–38)</h2>
+              <p>Ambos benefician a los <strong>beneficiarios designados</strong> por el afiliado cuando este fallece con <strong>más de 25 años de aportación</strong>.</p>
+
+              <div class="info-card rose">
+                <div class="info-card-icon">⚠️</div>
+                <div><strong>Nota legal importante:</strong> El texto oficial (Arts. 37 y 38) exige <strong>más de 25 años de aportación para ambos</strong> beneficios — Auxilio y Pensión. La diferencia es que el Auxilio es un <em>pago único</em> y la Pensión es una <em>renta mensual vitalicia</em>.</div>
+              </div>
+
+              <h3>A) Auxilio de Sobrevivencia (Art. 37) — pago único:</h3>
+              <div class="req-table" style="margin-top:12px">
+                <div class="req-row header"><span>Situación</span><span>Monto</span></div>
+                <div class="req-row"><span>Activo — muerte por <strong>Alto Riesgo del Servicio</strong></span><span class="req-value">40 × SBM</span></div>
+                <div class="req-row"><span>Activo — muerte por <strong>cualquier otra causa</strong></span><span class="req-value">20 × SBM</span></div>
+                <div class="req-row"><span>Pensionado — cualquier causa</span><span class="req-value">20 × pensión mensual</span></div>
+              </div>
+
+              <h3>B) Pensión de Sobrevivencia (Art. 38) — renta mensual vitalicia:</h3>
+              <div class="benefit-cards-grid" style="margin-top:12px">
+                <div class="benefit-tile violet">
+                  <div class="bt-label">Viuda / Viudo</div>
+                  <div class="bt-value">40%</div>
+                  <div class="bt-unit">del SBM</div>
+                </div>
+                <div class="benefit-tile cyan">
+                  <div class="bt-label">Cada hijo</div>
+                  <div class="bt-value">15%</div>
+                  <div class="bt-unit">del SBM</div>
+                </div>
+                <div class="benefit-tile emerald">
+                  <div class="bt-label">Sin cónyuge/hijos → Ascendientes</div>
+                  <div class="bt-value">50%</div>
+                  <div class="bt-unit">del SBM</div>
+                </div>
+              </div>
+              <div class="info-card amber" style="margin-top:12px">
+                <strong>Tope legal:</strong> La suma no puede ser menor al 70% del salario mínimo ni mayor al <strong>80% del SBM</strong> del afiliado causante.<br>
+                <strong>Aplica a:</strong> hijos discapacitados o menores de 18 años (o menores de 24 si estudian y demuestran solvencia académica).
+              </div>
+            </div>
+
+            <div class="content-section" id="n-desig">
+              <h2>E. Designación de Beneficiarios (Arts. 39–40)</h2>
+              <div class="two-cols">
+                <div class="info-card emerald">
+                  <div class="info-card-label">ART. 39 — DESIGNACIÓN</div>
+                  <p>El afiliado debe acreditar ante el IPM los nombres y existencia de sus beneficiarios. Tiene derecho a <strong>cambiarlos cuando lo desee</strong> por los medios legales establecidos.</p>
+                </div>
+                <div class="info-card rose">
+                  <div class="info-card-label">ART. 40 — SIN DESIGNACIÓN</div>
+                  <p>Si no hay beneficiarios designados o la designación es incorrecta, el valor de todas las prestaciones pasa a formar parte de la <strong>masa hereditaria</strong> del afiliado fallecido.</p>
+                </div>
+              </div>
+              <div class="info-card amber" style="margin-top:12px">
+                <div class="info-card-icon">💡</div>
+                <div>Por eso es <strong>fundamental mantener actualizado el expediente</strong> en el IPM — una designación incorrecta o inexistente puede hacer que los beneficios no lleguen a quienes el afiliado quería.</div>
+              </div>
+            </div>
+
+            <div class="content-section" id="n-fun">
+              <h2>F. Gastos Funerarios (Art. 41)</h2>
+              <p>Tiene derecho quien incurra en los gastos de sepelio y demás servicios fúnebres por la muerte del afiliado.</p>
+              <div class="info-card violet">
+                <div class="info-card-icon">📊</div>
+                <div>El monto se determina según tablas por grado: oficiales, sub-oficiales, tropa/escala básica y auxiliares.<br>
+                <strong>Tope legal:</strong> En ningún caso puede superar <strong>15 salarios mínimos</strong>.</div>
+              </div>
+              <h3>Documentación requerida (originales — Departamento de Afiliación):</h3>
+              <div class="checklist">
+                <div class="check-item">📋 Acta de Defunción</div>
+                <div class="check-item">📄 Informe de Muerte</div>
+                <div class="check-item">🧾 Facturas de los gastos funerarios</div>
+                <div class="check-item">📝 Acuerdo de baja por defunción</div>
+              </div>
+              <div class="info-card emerald" style="margin-top:12px">
+                <div class="info-card-icon">📞</div>
+                <div><strong>FUSAMI:</strong> 2232-5070 / Fax: 2239-1338<br>No requiere pago por adelantado. Coordina: ataúd, sala de velatorio, alimentación, preparación del cuerpo, carroza fúnebre y lote.</div>
+              </div>
+            </div>
+
+            <div class="content-section" id="n-cirl">
+              <h2>G. Reserva Laboral y Prima de Antigüedad (Arts. 42–45)</h2>
+
+              <div class="accordion">
+                <div class="acc-item">
+                  <button class="acc-header" onclick="toggleAcc(this)"><span>Art. 42 — Reserva Laboral (CIRL)</span><span class="acc-arrow">▼</span></button>
+                  <div class="acc-body">
+                    <p>Todo afiliado al RRE tiene derecho a una <strong>Cuenta Individual de Reserva Laboral (CIRL)</strong>. Se financia con cotizaciones patronales del <strong>7% del salario sujeto de aportación</strong> (Decreto 287-2005) más intereses. El IPM debe informar trimestralmente mediante estado de cuenta.</p>
+                    <h4>¿Quiénes tienen derecho?</h4>
+                    <div class="checklist">
+                      <div class="check-item">Personal de tropa de las FF.AA.</div>
+                      <div class="check-item">Sub-oficiales de las FF.AA.</div>
+                      <div class="check-item">Personal de la Escala Básica y Sub-Oficiales de la Policía</div>
+                      <div class="check-item">Personal permanente del Cuerpo de Bomberos</div>
+                      <div class="check-item">Nuevos afiliados al RRE de FF.AA., Policía, Bomberos, INP y DNII</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="acc-item">
+                  <button class="acc-header" onclick="toggleAcc(this)"><span>Art. 43 — Prima de Antigüedad</span><span class="acc-arrow">▼</span></button>
+                  <div class="acc-body">
+                    <p>Si el afiliado termina su relación laboral por cualquier causa <strong>distinta al despido injustificado</strong>, a él (o a su Grupo Familiar Beneficiario, si fallece) le corresponde lo acumulado en su CIRL, bajo el nombre de "Prima de Antigüedad".</p>
+                  </div>
+                </div>
+                <div class="acc-item">
+                  <button class="acc-header" onclick="toggleAcc(this)"><span>Art. 44 — Auxilio de Cesantía (Despido Injustificado)</span><span class="acc-arrow">▼</span></button>
+                  <div class="acc-body">
+                    <ul>
+                      <li>Si lo acumulado en la CIRL es <strong>igual o mayor</strong> al monto de cesantía, el empleador puede usar esa reserva; el saldo sobrante es del afiliado.</li>
+                      <li>Si lo acumulado es <strong>menor</strong>, el empleador debe complementar la diferencia con un pago adicional directo.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="acc-item">
+                  <button class="acc-header" onclick="toggleAcc(this)"><span>Art. 45 — Orden de Pago</span><span class="acc-arrow">▼</span></button>
+                  <div class="acc-body">
+                    <p>La CIRL se liquida <strong>antes</strong> que cualquier otra prestación previsional de esta Ley. Solo puede postergarse si hay una garantía en ejecución por mora de un préstamo del RRE, o si el afiliado pide expresamente no retirarla en pago único para mejorar sus pensiones futuras.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-section" id="n-reglas">
+              <h2>H. Reglas Generales (Arts. 46–51)</h2>
+              <div class="rules-grid">
+                <div class="rule-card">
+                  <div class="rule-art">Art. 46</div>
+                  <div class="rule-title">Incompatibilidad</div>
+                  <p>Las pensiones del RRE son <strong>incompatibles</strong> con las de cualquier otro régimen. Si pertenece a más de uno, debe <strong>elegir</strong> antes de recibir el beneficio.</p>
+                </div>
+                <div class="rule-card">
+                  <div class="rule-art">Art. 49</div>
+                  <div class="rule-title">Extinción de Pensiones</div>
+                  <p>Una pensión se extingue si mueren los beneficiarios, si la discapacidad fue autoinferida dolosamente, por declaración de indignidad, o si el afiliado soltero sin hijos es abandonado siendo menor de edad.</p>
+                </div>
+                <div class="rule-card">
+                  <div class="rule-art">Art. 50</div>
+                  <div class="rule-title">IPM como Acreedor Preferente</div>
+                  <p>El IPM tiene prelación sobre cualquier otro acreedor. Las prestaciones <strong>solo pueden embargarse</strong> para hacer efectiva una obligación de alimentos (pensión alimenticia).</p>
+                </div>
+                <div class="rule-card">
+                  <div class="rule-art">Art. 51</div>
+                  <div class="rule-title">Reingreso al Sistema</div>
+                  <p>Si reingresa sin haber recibido el beneficio de separación, se le reconoce su antigüedad ya cotizada. Si ya recibió la separación, <strong>se trata como afiliado nuevo</strong> al reingresar.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-section" id="n-resumen">
+              <h2>✅ Resumen — ¿Cuándo aplica cada beneficio?</h2>
+              <div class="summary-table">
+                <div class="sum-row header">
+                  <span>Situación del afiliado</span>
+                  <span>Beneficio</span>
+                  <span>Artículo</span>
+                </div>
+                <div class="sum-row">
+                  <span>Cumple 25 años cotizados + edad mínima (58 auxiliar / 50 riesgo especial)</span>
+                  <span class="sum-benefit violet">Pensión por Retiro</span>
+                  <span class="sum-art">Art. 33</span>
+                </div>
+                <div class="sum-row">
+                  <span>Cumple 25 años cotizados pero no la edad (Personal Auxiliar)</span>
+                  <span class="sum-benefit amber">Situación Suspensiva</span>
+                  <span class="sum-art">Art. 33</span>
+                </div>
+                <div class="sum-row">
+                  <span>Queda con discapacidad total y permanente (cualquier antigüedad)</span>
+                  <span class="sum-benefit cyan">Pensión por Discapacidad (90% u 80% SBM)</span>
+                  <span class="sum-art">Art. 35</span>
+                </div>
+                <div class="sum-row">
+                  <span>Discapacitado con más de 25 años cotizados</span>
+                  <span class="sum-benefit violet">Pensión + Auxilio por Discapacidad (pago único)</span>
+                  <span class="sum-art">Art. 35</span>
+                </div>
+                <div class="sum-row">
+                  <span>Se separa del sistema con menos de 25 años cotizados</span>
+                  <span class="sum-benefit emerald">Beneficio de Separación o Transferencia</span>
+                  <span class="sum-art">Art. 36</span>
+                </div>
+                <div class="sum-row">
+                  <span>Fallece con más de 25 años de aportación</span>
+                  <span class="sum-benefit cyan">Auxilio (pago único) + Pensión de Sobrevivencia (mensual)</span>
+                  <span class="sum-art">Arts. 37–38</span>
+                </div>
+                <div class="sum-row">
+                  <span>Fallece el afiliado (cualquier caso)</span>
+                  <span class="sum-benefit amber">Gastos Funerarios (tope: 15 salarios mínimos)</span>
+                  <span class="sum-art">Art. 41</span>
+                </div>
+                <div class="sum-row">
+                  <span>Termina relación laboral (causa distinta a despido injustificado)</span>
+                  <span class="sum-benefit emerald">Reserva Laboral / Prima de Antigüedad</span>
+                  <span class="sum-art">Arts. 42–43</span>
+                </div>
+                <div class="sum-row">
+                  <span>Es despedido injustificadamente</span>
+                  <span class="sum-benefit rose">CIRL cubre / complementa el Auxilio de Cesantía</span>
+                  <span class="sum-art">Art. 44</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- SUB-SECTION: Pre-existentes -->
+      <div id="sub-preexistentes" class="sub-section">
+        <div class="study-layout">
+          <aside class="study-toc">
+            <div class="toc-title">Pre-existentes</div>
+            <a href="#p-sep" class="toc-link">A. Separación</a>
+            <a href="#p-disc" class="toc-link">B. Discapacidad</a>
+            <a href="#p-retiro" class="toc-link">C. Pensión por Retiro</a>
+            <a href="#p-suma" class="toc-link">D. Suma Asegurada</a>
+            <a href="#p-montepio" class="toc-link">E. Montepío</a>
+            <a href="#p-fun" class="toc-link">F. Gastos Funerarios</a>
+          </aside>
+          <div class="study-content">
+
+            <div class="hero-badge indigo">
+              <span class="badge-icon">🗂️</span>
+              <div>
+                <strong>Estructura 2 de 3 — Afiliados Pre-existentes</strong>
+                <p>Capítulo VI, Arts. 54–66 del Decreto 167-2006. Aplica a quienes ya estaban protegidos por el Decreto No. 905-80 (anterior a febrero 2007).</p>
+              </div>
+            </div>
+
+            <div class="content-section" id="p-sep">
+              <h2>A. Beneficio de Separación (Art. 55)</h2>
+              <p>Para pre-existentes que se separan de FF.AA. o PN.</p>
+              <div class="req-table">
+                <div class="req-row header"><span>Años cotizados</span><span>Monto del beneficio</span></div>
+                <div class="req-row"><span>Menos de 5 años</span><span class="req-value">Devolución de aportaciones individuales + intereses</span></div>
+                <div class="req-row"><span>≥ 5 años y &lt; 22 años</span><span class="req-value">Aportaciones del 9% + intereses</span></div>
+                <div class="req-row"><span>≥ 5 años (al entrar la nueva Ley)</span><span class="req-value">1 sueldo asegurado × años cotizados</span></div>
+              </div>
+            </div>
+
+            <div class="content-section" id="p-disc">
+              <h2>B. Pensión por Discapacidad (Art. 56)</h2>
+              <p>Previo proceso del <strong>Comité Especial</strong> para determinar la discapacidad.</p>
+              <div class="benefit-cards-grid">
+                <div class="benefit-tile violet">
+                  <div class="bt-label">Guerra o emergencia nacional</div>
+                  <div class="bt-value">100%</div>
+                  <div class="bt-unit">sueldo asegurado</div>
+                </div>
+                <div class="benefit-tile cyan">
+                  <div class="bt-label">Actos de servicio</div>
+                  <div class="bt-value">90%</div>
+                  <div class="bt-unit">sueldo asegurado</div>
+                </div>
+                <div class="benefit-tile emerald">
+                  <div class="bt-label">Por enfermedad</div>
+                  <div class="bt-value">85%</div>
+                  <div class="bt-unit">sueldo asegurado</div>
+                </div>
+                <div class="benefit-tile amber">
+                  <div class="bt-label">Circunstancias distintas</div>
+                  <div class="bt-value">80%</div>
+                  <div class="bt-unit">sueldo asegurado</div>
+                </div>
+              </div>
+              <div class="example-block" style="margin-top:16px">
+                <div class="ex-title">📐 Ejemplo (Sueldo Asegurado L. 10,000)</div>
+                <div class="ex-row"><span class="ex-label">100%</span><span class="ex-value">L. 10,000.00</span></div>
+                <div class="ex-row"><span class="ex-label">90%</span><span class="ex-value">L. 9,000.00</span></div>
+                <div class="ex-row"><span class="ex-label">85%</span><span class="ex-value">L. 8,500.00</span></div>
+                <div class="ex-row"><span class="ex-label">80%</span><span class="ex-value">L. 8,000.00</span></div>
+              </div>
+            </div>
+
+            <div class="content-section" id="p-retiro">
+              <h2>C. Pensión por Retiro (Arts. 57–58)</h2>
+
+              <h3>Oficiales y Sub-oficiales (Art. 57)</h3>
+              <div class="info-card violet"><strong>Requisito:</strong> ≥ 22 años de cotización, <strong>sin límite de edad</strong>.</div>
+              <div class="table-wrap" style="margin-top:12px">
+                <table class="data-table">
+                  <thead><tr><th>Años cotizados</th><th>22</th><th>23</th><th>24</th><th>25</th><th>26</th><th>27</th><th>28</th><th>29</th><th>30</th><th>31</th><th>32</th><th>33</th><th>34</th><th>35</th></tr></thead>
+                  <tbody>
+                    <tr><td><strong>%</strong></td><td>58%</td><td>62%</td><td>66%</td><td>70%</td><td>74%</td><td>78%</td><td>82%</td><td>86%</td><td>90%</td><td>92%</td><td>94%</td><td>96%</td><td>98%</td><td>100%</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="example-block" style="margin-top:12px">
+                <div class="ex-title">📐 Ejemplo Oficial (L. 10,000 — 24 años)</div>
+                <div class="ex-row"><span class="ex-label">10,000 × 66%</span><span class="ex-value">L. 6,600.00/mes</span></div>
+                <div class="ex-total">× 14 pagos anuales (incluye 13° y 14°)</div>
+              </div>
+
+              <h3 style="margin-top:28px">Auxiliares (Art. 58)</h3>
+              <div class="info-card cyan"><strong>Requisito:</strong> ≥ 22 años de cotización + <strong>55 años de edad</strong>.</div>
+              <div class="table-wrap" style="margin-top:12px">
+                <table class="data-table">
+                  <thead><tr><th>Edad\Años</th><th>22</th><th>23</th><th>24</th><th>25</th><th>26</th><th>27</th><th>28</th><th>29</th><th>30</th><th>31</th><th>32</th><th>33</th><th>34</th><th>35</th><th>36</th></tr></thead>
+                  <tbody>
+                    <tr><td><strong>55</strong></td><td>60%</td><td>63%</td><td>66%</td><td>69%</td><td>72%</td><td>75%</td><td>78%</td><td>81%</td><td>84%</td><td>87%</td><td>90%</td><td>93%</td><td>96%</td><td>99%</td><td>100%</td></tr>
+                    <tr><td><strong>58</strong></td><td>69%</td><td>72%</td><td>75%</td><td>78%</td><td>81%</td><td>84%</td><td>87%</td><td>90%</td><td>93%</td><td>96%</td><td>99%</td><td>100%</td><td>100%</td><td>100%</td><td>100%</td></tr>
+                    <tr><td><strong>62</strong></td><td>81%</td><td>84%</td><td>87%</td><td>90%</td><td>93%</td><td>96%</td><td>99%</td><td>100%</td><td>100%</td><td>100%</td><td>100%</td><td>100%</td><td>100%</td><td>100%</td><td>100%</td></tr>
+                    <tr><td><strong>65+</strong></td><td>90%</td><td>93%</td><td>96%</td><td>99%</td><td>100%</td><td>100%</td><td>100%</td><td>100%</td><td>100%</td><td>100%</td><td>100%</td><td>100%</td><td>100%</td><td>100%</td><td>100%</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="content-section" id="p-suma">
+              <h2>D. Suma Asegurada (Art. 60)</h2>
+              <div class="req-table">
+                <div class="req-row header"><span>Caso</span><span>Beneficio</span></div>
+                <div class="req-row"><span>Fallece afiliado activo (beneficiarios)</span><span class="req-value">40× o 20× el sueldo asegurado</span></div>
+                <div class="req-row"><span>Retiro o discapacidad con ≥ 22 años cotizados</span><span class="req-value">Pago único: 48% del sueldo × 35, +4%/año adicional hasta 100%</span></div>
+                <div class="req-row"><span>Fallece pensionado (beneficiarios)</span><span class="req-value">12 pensiones mensuales</span></div>
+              </div>
+              <div class="info-card cyan" style="margin-top:12px">
+                <strong>Diferencia con Nuevos Afiliados:</strong> Para nuevos, la base es 68% × 22 años; para pre-existentes, es 48% × 35 años.
+              </div>
+            </div>
+
+            <div class="content-section" id="p-montepio">
+              <h2>E. Montepío (Arts. 61–63)</h2>
+              <p>Prestación mensual pagadera <strong>14 veces al año</strong>.</p>
+              <h3>Tienen derecho:</h3>
+              <div class="checklist">
+                <div class="check-item">Viuda o viudo del afiliado(a)</div>
+                <div class="check-item">Hijos menores de 21 años</div>
+                <div class="check-item">Hijos menores de 24 años que estudien (con índice de aprobación)</div>
+                <div class="check-item">Hijos discapacitados total y permanentemente (cualquier edad)</div>
+              </div>
+              <h3 style="margin-top:20px">Monto de la pensión:</h3>
+              <div class="req-table">
+                <div class="req-row header"><span>Situación</span><span>Causa</span><span>%</span></div>
+                <div class="req-row"><span>Afiliado <strong>Activo</strong></span><span>Alto Riesgo</span><span class="req-value">90% sueldo</span></div>
+                <div class="req-row"><span>Afiliado <strong>Activo</strong></span><span>Otras</span><span class="req-value">80% sueldo</span></div>
+                <div class="req-row"><span>Afiliado <strong>Pensionado</strong></span><span>Cualquiera</span><span class="req-value">80% de la pensión</span></div>
+              </div>
+              <div class="info-card violet" style="margin-top:12px">
+                <strong>Distribución:</strong> 50% viuda/compañera + 50% entre hijos (proporcional). Si no hay hijos ni cónyuge: 50% del sueldo a los padres que dependían económicamente.
+              </div>
+            </div>
+
+            <div class="content-section" id="p-fun">
+              <h2>F. Gastos Funerarios (Art. 59)</h2>
+              <p>Misma mecánica que el Art. 41 de nuevos afiliados. Reembolso según tablas por grado, mismos documentos y mismo procedimiento con FUSAMI.</p>
+              <p>Ver la sección <strong>Gastos Funerarios</strong> para las tablas completas por grado y alianzas departamentales.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- SUB-SECTION: INJUPEMP -->
+      <div id="sub-injupemp" class="sub-section">
+        <div class="study-layout">
+          <aside class="study-toc">
+            <div class="toc-title">INJUPEMP</div>
+            <a href="#i-art36" class="toc-link">Art. 36 — Muerte en Activo</a>
+            <a href="#i-art37" class="toc-link">Art. 37 — Muerte Fuera</a>
+            <a href="#i-art72" class="toc-link">Art. 72-D — Beneficiarios</a>
+            <a href="#i-comp" class="toc-link">Comparativa</a>
+          </aside>
+          <div class="study-content">
+
+            <div class="hero-badge indigo">
+              <span class="badge-icon">⚖️</span>
+              <div>
+                <strong>Estructura 3 de 3 — Acogidos al INJUPEMP</strong>
+                <p>Para afiliados acogidos a la Ley del INJUPEMP (Arts. 1 y 6-m). Artículos clave: 36, 37 y 72-D.</p>
+              </div>
+            </div>
+
+            <div class="content-section" id="i-art36">
+              <h2>⚖️ Artículo 36 — Muerte en Servicio Activo</h2>
+              <p>Si el participante muere en Servicio Activo, sus <strong>beneficiarios legales</strong> recibirán:</p>
+              <div class="benefit-cards-grid">
+                <div class="benefit-tile violet">
+                  <div class="bt-label">Muerte Natural</div>
+                  <div class="bt-value">18×</div>
+                  <div class="bt-unit">el sueldo asignado</div>
+                  <div style="font-size:12px;margin-top:8px;color:var(--c-text-muted)">+ devolución de aportaciones e intereses</div>
+                </div>
+                <div class="benefit-tile cyan">
+                  <div class="bt-label">Muerte Accidental</div>
+                  <div class="bt-value">36×</div>
+                  <div class="bt-unit">el sueldo asignado</div>
+                  <div style="font-size:12px;margin-top:8px;color:var(--c-text-muted)">+ devolución de aportaciones e intereses</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-section" id="i-art37">
+              <h2>⚖️ Artículo 37 — Muerte Fuera del Servicio</h2>
+              <p>Si el participante muere estando fuera del servicio público con <strong>derechos adquiridos</strong> para jubilación por edad o pensión por invalidez.</p>
+              <div class="info-card cyan">
+                <div class="info-card-icon">📅</div>
+                <div>Sus beneficiarios legales tienen derecho a <strong>120 mensualidades</strong> del beneficio que le correspondía (o el resto del período si ya estaba en curso).</div>
+              </div>
+              <div class="info-card emerald" style="margin-top:12px">
+                <div class="info-card-icon">➕</div>
+                <div>Extensión de hasta <strong>60 mensualidades adicionales</strong> cuando sobrevivan hijos menores de edad o hijos mayores discapacitados física o mentalmente, mientras subsista la causa.</div>
+              </div>
+            </div>
+
+            <div class="content-section" id="i-art72">
+              <h2>⚖️ Artículo 72-D — Designación de Beneficiarios</h2>
+              <div class="info-card violet">
+                <div class="info-card-icon">📜</div>
+                <div>
+                  La designación de beneficiarios <strong>debidamente registrada en el Instituto</strong> tiene carácter de <strong>manifestación de última voluntad</strong> y prevalece sobre el Código Civil en materia de sucesión, salvo:
+                  <ul style="margin-top:8px">
+                    <li>Revocación expresa posterior del participante</li>
+                    <li>Sin perjuicio de las asignaciones forzosas de ley</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-section" id="i-comp">
+              <h2>🔍 Comparativa: RRE vs. INJUPEMP</h2>
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead><tr><th>Concepto</th><th>Nuevos Afiliados (RRE)</th><th>INJUPEMP</th></tr></thead>
+                  <tbody>
+                    <tr><td>Muerte natural en activo</td><td>20 × SBM (auxilio)</td><td>18 × sueldo asignado</td></tr>
+                    <tr><td>Muerte accidental en activo</td><td>40 × SBM (auxilio)</td><td>36 × sueldo asignado</td></tr>
+                    <tr><td>Muerte del pensionado</td><td>20 × pensión mensual</td><td>120 mensualidades</td></tr>
+                    <tr><td>Extensión por hijos discapacitados</td><td>No aplica</td><td>+60 mensualidades adicionales</td></tr>
+                    <tr><td>Base del cálculo</td><td>SBM (prom. 5 años)</td><td>Sueldo asignado / Beneficio adquirido</td></tr>
+                    <tr><td>Devolución de aportaciones</td><td>No en auxilio</td><td>Sí, en Art. 36 (activo)</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- SUB-SECTION: Gastos Funerarios -->
+      <div id="sub-funerarios" class="sub-section">
+        <div class="study-layout">
+          <aside class="study-toc">
+            <div class="toc-title">Tablas y Alianzas</div>
+            <a href="#gf-docs" class="toc-link">Documentación</a>
+            <a href="#gf-ofic" class="toc-link">Oficiales</a>
+            <a href="#gf-subo" class="toc-link">Sub-oficiales</a>
+            <a href="#gf-tropa" class="toc-link">Tropa</a>
+            <a href="#gf-aux" class="toc-link">Auxiliares</a>
+            <a href="#gf-alianzas" class="toc-link">Alianzas</a>
+          </aside>
+          <div class="study-content">
+
+            <div class="content-section" id="gf-docs">
+              <h2>📋 Gastos Funerarios — Arts. 41 y 59</h2>
+              <div class="info-card violet"><strong>Tope legal:</strong> En ningún caso el beneficio puede superar <strong>15 salarios mínimos</strong>.</div>
+              <h3 style="margin-top:16px">Documentación requerida (originales — Departamento de Afiliación):</h3>
+              <div class="checklist">
+                <div class="check-item">📋 Acta de Defunción</div>
+                <div class="check-item">📄 Informe de Muerte</div>
+                <div class="check-item">🧾 Facturas de los gastos funerarios</div>
+                <div class="check-item">📝 Acuerdo de baja por defunción</div>
+              </div>
+              <div class="info-card emerald" style="margin-top:12px">
+                <strong>FUSAMI:</strong> 2232-5070 / Fax: 2239-1338 — No requiere pago por adelantado.
+              </div>
+            </div>
+
+            <div class="content-section" id="gf-ofic">
+              <h2>🎖️ Tabla — Oficiales</h2>
+              <div class="table-wrap"><table class="data-table">
+                <thead><tr><th>Grado</th><th>Monto</th></tr></thead>
+                <tbody>
+                  <tr><td>Subteniente, Alférez de Fragata y Sub-inspector</td><td><strong>L. 79,940.70</strong></td></tr>
+                  <tr><td>Teniente, Teniente de Fragata e Inspector</td><td><strong>L. 84,381.85</strong></td></tr>
+                  <tr><td>Capitán, Teniente de Navío y Sub-comisario</td><td><strong>L. 88,823.00</strong></td></tr>
+                  <tr><td>Mayor, Capitán de Corbeta y Comisario</td><td><strong>L. 93,264.15</strong></td></tr>
+                  <tr><td>Teniente Coronel, Capitán de Fragata y Sub-Comisionado</td><td><strong>L. 97,705.30</strong></td></tr>
+                  <tr><td>Coronel, Capitán de Navío y Comisionado</td><td><strong>L. 102,146.45</strong></td></tr>
+                  <tr><td>General de División, General de Brigada, Almirante, Contralmirante, Comisionado General, General Director</td><td><strong>L. 106,587.60</strong></td></tr>
+                </tbody>
+              </table></div>
+            </div>
+
+            <div class="content-section" id="gf-subo">
+              <h2>🎖️ Tabla — Sub-oficiales</h2>
+              <div class="table-wrap"><table class="data-table">
+                <thead><tr><th>Grado</th><th>Monto</th></tr></thead>
+                <tbody>
+                  <tr><td>Sargento Raso Comando I</td><td><strong>L. 66,617.25</strong></td></tr>
+                  <tr><td>Sargento Segundo Comando II</td><td><strong>L. 71,058.40</strong></td></tr>
+                  <tr><td>Sargento Primero Comando III</td><td><strong>L. 75,499.55</strong></td></tr>
+                  <tr><td>Suboficial I, Jefe Primero y Suboficial I de la Policía</td><td><strong>L. 79,940.70</strong></td></tr>
+                  <tr><td>Suboficial II, Jefe Maestro y Suboficial II de la Policía</td><td><strong>L. 84,381.85</strong></td></tr>
+                  <tr><td>Suboficial III, Jefe Mayor y Suboficial III de la Policía</td><td><strong>L. 88,823.00</strong></td></tr>
+                </tbody>
+              </table></div>
+            </div>
+
+            <div class="content-section" id="gf-tropa">
+              <h2>🪖 Tabla — Tropa y Escala Básica</h2>
+              <div class="table-wrap"><table class="data-table">
+                <thead><tr><th>Descripción</th><th>Monto</th></tr></thead>
+                <tbody>
+                  <tr><td>Soldados, Cabos, Técnicos FF.AA. y equivalentes; Bomberos, Policía, INP</td><td><strong>L. 62,176.10</strong></td></tr>
+                  <tr><td>Sargentos Rasos FF.AA. y equivalentes; Bomberos, Policía Clase I, INP</td><td><strong>L. 66,617.25</strong></td></tr>
+                  <tr><td>Sargentos Segundos y Técnicos; Bomberos, Policía Clase II, INP</td><td><strong>L. 71,058.40</strong></td></tr>
+                  <tr><td>Sargentos Primeros y Técnicos; Bomberos, Policía Clase III, INP</td><td><strong>L. 75,499.55</strong></td></tr>
+                </tbody>
+              </table></div>
+            </div>
+
+            <div class="content-section" id="gf-aux">
+              <h2>📋 Tabla — Auxiliares (por rango salarial)</h2>
+              <div class="table-wrap"><table class="data-table">
+                <thead><tr><th>Desde</th><th>Hasta</th><th>Monto</th></tr></thead>
+                <tbody>
+                  <tr><td>L. 1.00</td><td>L. 7,000.00</td><td><strong>L. 62,176.10</strong></td></tr>
+                  <tr><td>L. 7,000.10</td><td>L. 14,000.10</td><td><strong>L. 66,617.25</strong></td></tr>
+                  <tr><td>L. 14,000.20</td><td>L. 21,000.20</td><td><strong>L. 71,058.40</strong></td></tr>
+                  <tr><td>L. 21,000.30</td><td>L. 28,000.30</td><td><strong>L. 75,499.55</strong></td></tr>
+                  <tr><td>L. 28,000.40</td><td>L. 35,000.40</td><td><strong>L. 79,940.70</strong></td></tr>
+                  <tr><td>L. 35,000.50</td><td>L. 42,000.50</td><td><strong>L. 84,381.85</strong></td></tr>
+                  <tr><td>L. 42,000.60</td><td>L. 49,000.60</td><td><strong>L. 88,823.00</strong></td></tr>
+                  <tr><td>L. 49,000.70</td><td>L. 56,000.70</td><td><strong>L. 93,264.15</strong></td></tr>
+                  <tr><td>L. 56,000.80</td><td>L. 63,000.80</td><td><strong>L. 97,705.30</strong></td></tr>
+                  <tr><td>L. 63,000.90</td><td>L. 70,000.90</td><td><strong>L. 102,146.45</strong></td></tr>
+                  <tr><td>L. 70,001.00</td><td>En adelante</td><td><strong>L. 106,587.60</strong></td></tr>
+                </tbody>
+              </table></div>
+            </div>
+
+            <div class="content-section" id="gf-alianzas">
+              <h2>📍 Alianzas por Departamento</h2>
+              <div class="table-wrap"><table class="data-table">
+                <thead><tr><th>Departamento</th><th>Proveedora</th><th>Contacto</th><th>Teléfono</th></tr></thead>
+                <tbody>
+                  <tr><td>Francisco Morazán</td><td>FUSAMI Alameda</td><td>Alex Alvarado</td><td>2232-5070 / 9896-5731</td></tr>
+                  <tr><td>Francisco Morazán</td><td>FUSAMI Kennedy</td><td>Samir Orozco</td><td>2232-5070 / 9920-6835</td></tr>
+                  <tr><td>Comayagua / La Paz</td><td>FUSAMI Comayagua</td><td>Gerardo Solórzano</td><td>2772-0452 / 9824-2884</td></tr>
+                  <tr><td>Choluteca / Valle</td><td>FUSAMI Choluteca</td><td>Enrico Ramírez</td><td>2782-2147 / 9905-3176</td></tr>
+                  <tr><td>Cortés</td><td>FUSAMI SPS</td><td>Luis Rivera</td><td>2550-5607 / 9626-9674</td></tr>
+                  <tr><td>Colón</td><td>FUSAMI Tocoa</td><td>Max Alberto Montoya</td><td>2444-3010 / 9911-9789</td></tr>
+                  <tr><td>Atlántida (La Ceiba)</td><td>Amor Eterno</td><td>Ana Gómez</td><td>2443-3211 / 3339-2164</td></tr>
+                  <tr><td>Yoro (El Progreso)</td><td>Amor Eterno</td><td>Servicio al Cliente</td><td>2647-4529</td></tr>
+                  <tr><td>Copán</td><td>Amor Eterno</td><td>Rosemberg Blandón</td><td>9811-9589</td></tr>
+                  <tr><td>Olancho</td><td>Inmaculada Concepción</td><td>Edgar Irías</td><td>2785-1727 / 9464-3239</td></tr>
+                  <tr><td>El Paraíso (Danlí)</td><td>Jardines del Edén</td><td>Yeny Irías</td><td>2763-3637 / 9849-8031</td></tr>
+                  <tr><td>Ocotepeque</td><td>La Protección</td><td>Carlos Ramos</td><td>2653-3654 / 9782-0808</td></tr>
+                  <tr><td>Santa Bárbara</td><td>La Resurrección</td><td>Atención al Cliente</td><td>9811-9589</td></tr>
+                </tbody>
+              </table></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- SUB-SECTION: Calculadora -->
+      <div id="sub-calculadora" class="sub-section">
+        <div class="study-layout no-toc">
+          <div class="study-content full-width">
+
+            <div class="hero-badge" style="background:linear-gradient(135deg,rgba(6,182,212,0.15),rgba(124,58,237,0.1))">
+              <span class="badge-icon">🧮</span>
+              <div>
+                <strong>Calculadora de Beneficios IPM</strong>
+                <p>Calcula pensiones, auxilios y sumas aseguradas con los datos reales de la Ley.</p>
+              </div>
+            </div>
+
+            <div class="calc-grid">
+
+              <div class="calc-panel">
+                <h3>Pensión por Retiro — Nuevos Afiliados (Art. 33)</h3>
+                <div class="calc-field"><label>SBM — Salario Básico Mensual (L.)</label><input type="number" id="sbmRetiro" placeholder="Ej: 10500" min="0" /></div>
+                <div class="calc-field"><label>Años cotizados</label><input type="number" id="anosRetiro" placeholder="Ej: 25" min="25" max="40" /></div>
+                <div class="calc-field"><label>Edad cronológica</label><input type="number" id="edadRetiro" placeholder="Ej: 58" min="50" /></div>
+                <button class="btn-calc" onclick="calcRetiro()">Calcular Pensión</button>
+                <div class="calc-result" id="resultRetiro">
+                  <div class="result-amount" id="retiroMonto">L. 0.00</div>
+                  <div class="result-label" id="retiroLabel">Pensión mensual</div>
+                  <div class="result-breakdown" id="retiroBreakdown"></div>
+                </div>
+              </div>
+
+              <div class="calc-panel">
+                <h3>Pensión + Auxilio por Discapacidad (Art. 35)</h3>
+                <div class="calc-field"><label>SBM (L.)</label><input type="number" id="sbmDisc" placeholder="Ej: 9000" min="0" /></div>
+                <div class="calc-field"><label>Causa</label>
+                  <select id="causaDisc">
+                    <option value="90">Alto Riesgo del Servicio (90%)</option>
+                    <option value="80">Otras causas (80%)</option>
+                  </select>
+                </div>
+                <button class="btn-calc" onclick="calcDiscapacidad()">Calcular</button>
+                <div class="calc-result" id="resultDisc">
+                  <div class="result-amount" id="discMonto">L. 0.00</div>
+                  <div class="result-label">Pensión mensual vitalicia</div>
+                  <div class="result-breakdown" id="discBreakdown"></div>
+                </div>
+              </div>
+
+              <div class="calc-panel">
+                <h3>Auxilio de Sobrevivencia (Art. 37)</h3>
+                <div class="calc-field"><label>SBM o Monto de pensión (L.)</label><input type="number" id="sbmSobrev" placeholder="Ej: 8500" min="0" /></div>
+                <div class="calc-field"><label>Situación del afiliado</label>
+                  <select id="situSobrev">
+                    <option value="40">Activo — Alto Riesgo (40 × SBM)</option>
+                    <option value="20_activo">Activo — Otra causa (20 × SBM)</option>
+                    <option value="20_pension">Pensionado (20 × pensión)</option>
+                  </select>
+                </div>
+                <button class="btn-calc" onclick="calcSobrevivencia()">Calcular Auxilio</button>
+                <div class="calc-result" id="resultSobrev">
+                  <div class="result-amount" id="sobrevMonto">L. 0.00</div>
+                  <div class="result-label">Pago único a beneficiarios</div>
+                  <div class="result-breakdown" id="sobrevBreakdown"></div>
+                </div>
+              </div>
+
+              <div class="calc-panel">
+                <h3>Pensión por Retiro — Pre-existentes Oficiales (Art. 57)</h3>
+                <div class="calc-field"><label>Sueldo Asegurado (L.)</label><input type="number" id="sbmPre" placeholder="Ej: 10000" min="0" /></div>
+                <div class="calc-field"><label>Años cotizados (mín. 22)</label><input type="number" id="anosPre" placeholder="Ej: 24" min="22" max="35" /></div>
+                <button class="btn-calc" onclick="calcPreExistente()">Calcular</button>
+                <div class="calc-result" id="resultPre">
+                  <div class="result-amount" id="preMonto">L. 0.00</div>
+                  <div class="result-label">Pensión mensual (× 14/año)</div>
+                  <div class="result-breakdown" id="preBreakdown"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Riesgos Module -->
+    <section id="module-riesgos" class="module">
+      <div class="coming-soon">
+        <div class="cs-icon">⚠️</div>
+        <h2>Matriz de Riesgos</h2>
+        <p>Comparte tu documento de Matriz de Riesgos para activar este módulo.</p>
+        <div class="cs-pill">Próximamente</div>
+      </div>
+    </section>
+
+    <!-- Manual Module -->
+    <section id="module-manual" class="module">
+      <div class="coming-soon">
+        <div class="cs-icon">📋</div>
+        <h2>Manual de Procedimientos</h2>
+        <p>Comparte tu Manual de Procedimientos para activar este módulo.</p>
+        <div class="cs-pill">Próximamente</div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
