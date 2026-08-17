@@ -253,11 +253,12 @@ body {
 
 /* ---------- Req Table ---------- */
 .req-table { border: 1px solid var(--c-border); border-radius: var(--radius-md); overflow: hidden; margin: 10px 0; }
-.req-row { display: grid; grid-template-columns: 1fr auto; gap: 16px; padding: 11px 16px; font-size: 13px; border-bottom: 1px solid var(--c-border); color: var(--c-text-muted); align-items: center; }
+.req-row { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; padding: 11px 16px; font-size: 13px; border-bottom: 1px solid var(--c-border); color: var(--c-text-muted); }
+.req-row > span:first-child { flex: 1; min-width: 120px; }
+.req-row > span:not(:first-child) { text-align: right; white-space: nowrap; }
 .req-row:last-child { border-bottom: none; }
 .req-row.header { background: rgba(124,58,237,0.15); color: var(--c-violet-light); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
-.req-row.header { grid-template-columns: 1fr auto; }
-.req-value { font-weight: 600; color: var(--c-text); text-align: right; white-space: nowrap; }
+.req-value { font-weight: 600; color: var(--c-text); }
 
 /* ---------- Formula cards ---------- */
 .formula-card { background: rgba(124,58,237,0.08); border: 1px solid rgba(124,58,237,0.2); border-radius: var(--radius-md); padding: 16px; }
@@ -400,21 +401,41 @@ mark { background: rgba(124,58,237,0.4); color: var(--c-violet-light); border-ra
   .calc-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 768px) {
-  .module-hero { padding: 24px 20px; flex-direction: column; text-align: center; }
-  .hero-stats { justify-content: center; }
-  .hero-visual { font-size: 50px; }
+  .app-header { padding: 0 16px; }
+  .module-hero { padding: 24px 20px; flex-direction: column; text-align: center; gap: 16px; }
+  .hero-stats { justify-content: center; flex-wrap: wrap; }
+  .hero-visual { font-size: 50px; margin-top: 10px; }
   .two-cols { grid-template-columns: 1fr; }
   .objectives-grid { grid-template-columns: 1fr; }
   .institutions-grid { grid-template-columns: 1fr 1fr; }
   .rules-grid { grid-template-columns: 1fr; }
   .sum-row { grid-template-columns: 1fr; gap: 4px; }
-  .content-section { padding: 20px; }
+  .content-section { padding: 20px; scroll-margin-top: 150px; }
   .search-wrap kbd { display: none; }
-  .sub-nav { padding: 8px; }
-  .sub-tab { padding: 6px 12px; font-size: 12px; }
+  .sub-nav { padding: 12px; justify-content: center; }
+  .sub-tab { padding: 8px 14px; font-size: 12px; }
+  .hero-badge { flex-direction: column; align-items: center; text-align: center; }
+  .dist-row { grid-template-columns: 1fr; gap: 4px; }
+  .dist-label { text-align: left; }
+}
+@media (max-width: 600px) {
+  .header-inner { flex-direction: column; height: auto; padding: 12px 0; gap: 12px; align-items: stretch; }
+  .logo { justify-content: center; }
+  .search-wrap { max-width: 100%; }
+  .institutions-grid { grid-template-columns: 1fr; }
+  .benefit-cards-grid { grid-template-columns: 1fr; }
+  .req-table { overflow-x: auto; }
+  .req-row { min-width: 400px; }
 }
 @media (max-width: 480px) {
   .main-content { padding: 0 12px 40px; }
   .module-nav { padding: 14px 12px 0; }
   .tab-label { display: none; }
+  .hero-stats { flex-direction: column; gap: 12px; align-items: center; }
+  .stat-num { font-size: 22px; }
+  .sub-tab { flex: 1; text-align: center; display: flex; justify-content: center; }
+  .content-section h2 { font-size: 18px; }
+  .info-card { flex-direction: column; gap: 8px; }
+  .search-results { padding: 4px; }
+  .search-result-item { padding: 10px; }
 }
